@@ -1,6 +1,9 @@
 name: Run WEB Tests
 run-name: On Push - Web Tests Run
 on: [push]
+  pull_request:
+     branches:
+     - 'master'
 
 jobs: 
   web-tests:
