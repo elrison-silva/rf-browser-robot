@@ -1,5 +1,7 @@
 *** Settings ***
 Resource    ../resource/server-rest-front.resource    #../resource/server-rest-front.resource
+Suite Teardown  Close Browser ALL
+
 # Resource  ../evidencies/traces
 *** Test Cases ***
 Login com sucesso no Server Rest front
